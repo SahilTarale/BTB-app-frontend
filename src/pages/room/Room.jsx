@@ -24,7 +24,7 @@ const Room = () => {
   const [open, setOpen] = useState(false);
   const [openModal, setOpenModal] = useState(false);
   // const {imageUrls, loading, error} = useFetch(`/rooms/find/${id}`);  
-  const {data,loading,error}=useFetch(`https://BTB_app.onrender.com/`);
+  const {data,loading,error}=useFetch(`https://BTB_app/`);
   const {user} = useContext(AuthContext);
   const navigate=useNavigate();
   
@@ -96,7 +96,7 @@ const Room = () => {
             onClick={() => handleMove("l")}
           />
           <div className="sliderWrapper">
-            <img src={`https://BTB_app.onrender.com/${imageUrls?.photos[slideNumber]}`}  alt="" className="sliderImg" />
+            <img src={`https://BTB_app/${imageUrls?.photos[slideNumber]}`}  alt="" className="sliderImg" />
           </div>
           <FontAwesomeIcon
             icon={faCircleArrowRight}
@@ -122,7 +122,7 @@ const Room = () => {
             <div className="roomImgWrapper" key={i}>
               <img
                 onClick={() => handleOpen(i)}
-                src={`https://BTB_app.onrender.com/${[photo]}`} 
+                src={`https://BTB_app/${[photo]}`} 
                 alt=""
                 className="roomImg"
               />

@@ -14,7 +14,7 @@ const FeaturedProperties = () => {
           {data.map((item) => (
             <div className="fpItem" key={item._id}>
               <img
-                src={`https://BTB_app.onrender.com/${item.photos[0]}`}
+                src={`https://BTB_app/${item.photos[0]}`}
                 alt=""
                 className="fpImg"
               />
