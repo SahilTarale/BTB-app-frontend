@@ -54,7 +54,7 @@ const GetOwner = ()=>{
 
         
         try {
-          await axios.post('http://localhost:8800/api/rooms',formData);
+          await axios.post('https://BTB_app.onrender.com/api/rooms',formData);
           alert('Owner Details posted successful. ');
           navigate("/");
         } catch (e) {

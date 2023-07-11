@@ -5,7 +5,7 @@ const SearchItem = ({item}) => {
   return (
     <div className="searchItem">
       <img
-        src={`http://localhost:8800/${item.photos[0]}`}
+        src={`https://BTB_app.onrender.com/${item.photos[0]}`}
         alt=""
         className="siImg"
       />
